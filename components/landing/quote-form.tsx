@@ -172,6 +172,32 @@ export function QuoteForm() {
               Answer our quick form and we&apos;ll get in touch. No Pressure. No Obligation. Less than 60 Seconds.
             </p>
           </div>
+          {/* Features */}
+          <div
+            className="rounded-xl p-5 md:p-6 mb-8"
+            style={{ border: "1px solid #103a61" }}
+          >
+            <p className="text-sm font-bold text-card-foreground mb-4">Features</p>
+            <ul className="space-y-3">
+              {[
+                "Quartz Countertops",
+                "Soft-Close Cabinets",
+                "New Stove, Microwave & Fridge",
+                "Brand-New Sink Included",
+              ].map((feature) => (
+                <li key={feature} className="flex items-center gap-3">
+                  <span
+                    className="flex items-center justify-center w-5 h-5 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: "rgba(16, 58, 97, 0.12)" }}
+                  >
+                    <Check className="w-3 h-3" style={{ color: "#103a61" }} />
+                  </span>
+                  <span className="text-sm md:text-base text-card-foreground">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Progress Bar */}
           <div className="mb-8">
             <div className="h-2 bg-muted rounded-full overflow-hidden">
