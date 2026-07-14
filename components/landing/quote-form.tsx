@@ -162,22 +162,46 @@ export function QuoteForm() {
   return (
     <section id="quote-form" className="relative -mt-32 z-20 pb-20 bg-muted pt-4">
       <div className="container mx-auto px-4 max-w-2xl">
-        <div className="bg-card rounded-2xl shadow-xl p-6 md:p-8 font-[family-name:var(--font-poppins)]">
+        <div className="rounded-2xl p-[2px] bg-gradient-to-br from-[#00e5ff] via-[#0aa9f2] to-[#0066ff] shadow-[0_0_30px_rgba(0,173,252,0.35)]">
+        <div className="bg-card rounded-[calc(1rem-2px)] shadow-xl p-6 md:p-8 font-[family-name:var(--font-poppins)]">
           {/* Form Header */}
           <div className="text-center mb-6">
             <h2 className="text-xl md:text-2xl font-bold text-card-foreground mb-2">
-              See If You Qualify for Our $15K All-In Kitchen Transformation
+              See If You Qualify for Our $25K All-In Bathroom Transformation
             </h2>
             <p className="text-muted-foreground text-sm md:text-base">
-              Answer our quick form and we&apos;ll get in touch. No Pressure. No Obligation. Less than 60 Seconds.
+              Answer our quick form and we&apos;ll get in touch!<br /><br />
+              No Pressure. No Obligation. Less than 60 Seconds.
             </p>
           </div>
+          {/* Features */}
+          <div className="rounded-xl p-[2px] mb-8 bg-gradient-to-br from-[#00e5ff] via-[#0aa9f2] to-[#0066ff] shadow-[0_0_20px_rgba(0,173,252,0.25)]">
+            <div className="rounded-[calc(0.75rem-2px)] bg-card p-5 md:p-6">
+              <p className="text-sm font-bold text-card-foreground mb-4">Features</p>
+              <ul className="space-y-3.5">
+                {[
+                  "Quartz Countertops",
+                  "Soft-Close Cabinets",
+                  "New Stove, Microwave & Fridge",
+                  "Brand-New Sink Included",
+                ].map((feature) => (
+                  <li key={feature} className="flex items-center gap-3">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full flex-shrink-0 bg-gradient-to-br from-[#00c6ff] to-[#0066ff] shadow-[0_0_10px_rgba(0,173,252,0.55)]">
+                      <Check className="w-3.5 h-3.5 text-white" strokeWidth={3} />
+                    </span>
+                    <span className="text-sm md:text-base text-card-foreground">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
           {/* Progress Bar */}
           <div className="mb-8">
             <div className="h-2 bg-muted rounded-full overflow-hidden">
               <div 
-                className="h-full bg-primary transition-all duration-300 ease-out"
-                style={{ width: `${progress}%` }}
+                className="h-full transition-all duration-300 ease-out"
+                style={{ width: `${progress}%`, backgroundColor: "#07adf9" }}
               />
             </div>
             <p className="text-sm text-muted-foreground mt-2 text-center">
@@ -274,6 +298,7 @@ export function QuoteForm() {
               </Button>
             )}
           </div>
+        </div>
         </div>
       </div>
     </section>
