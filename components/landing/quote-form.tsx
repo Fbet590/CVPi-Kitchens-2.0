@@ -162,7 +162,8 @@ export function QuoteForm() {
   return (
     <section id="quote-form" className="relative -mt-32 z-20 pb-20 bg-muted pt-4">
       <div className="container mx-auto px-4 max-w-2xl">
-        <div className="bg-card rounded-2xl shadow-xl p-6 md:p-8 font-[family-name:var(--font-poppins)]">
+        <div className="rounded-2xl p-[2px] bg-gradient-to-br from-[#00e5ff] via-[#0aa9f2] to-[#0066ff] shadow-[0_0_30px_rgba(0,173,252,0.35)]">
+        <div className="bg-card rounded-[calc(1rem-2px)] shadow-xl p-6 md:p-8 font-[family-name:var(--font-poppins)]">
           {/* Form Header */}
           <div className="text-center mb-6">
             <h2 className="text-xl md:text-2xl font-bold text-card-foreground mb-2">
@@ -173,29 +174,25 @@ export function QuoteForm() {
             </p>
           </div>
           {/* Features */}
-          <div
-            className="rounded-xl p-5 md:p-6 mb-8"
-            style={{ border: "1px solid #103a61" }}
-          >
-            <p className="text-sm font-bold text-card-foreground mb-4">Features</p>
-            <ul className="space-y-3">
-              {[
-                "Quartz Countertops",
-                "Soft-Close Cabinets",
-                "New Stove, Microwave & Fridge",
-                "Brand-New Sink Included",
-              ].map((feature) => (
-                <li key={feature} className="flex items-center gap-3">
-                  <span
-                    className="flex items-center justify-center w-5 h-5 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: "rgba(16, 58, 97, 0.12)" }}
-                  >
-                    <Check className="w-3 h-3" style={{ color: "#103a61" }} />
-                  </span>
-                  <span className="text-sm md:text-base text-card-foreground">{feature}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="rounded-xl p-[2px] mb-8 bg-gradient-to-br from-[#00e5ff] via-[#0aa9f2] to-[#0066ff] shadow-[0_0_20px_rgba(0,173,252,0.25)]">
+            <div className="rounded-[calc(0.75rem-2px)] bg-card p-5 md:p-6">
+              <p className="text-sm font-bold text-card-foreground mb-4">Features</p>
+              <ul className="space-y-3.5">
+                {[
+                  "Quartz Countertops",
+                  "Soft-Close Cabinets",
+                  "New Stove, Microwave & Fridge",
+                  "Brand-New Sink Included",
+                ].map((feature) => (
+                  <li key={feature} className="flex items-center gap-3">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full flex-shrink-0 bg-gradient-to-br from-[#00c6ff] to-[#0066ff] shadow-[0_0_10px_rgba(0,173,252,0.55)]">
+                      <Check className="w-3.5 h-3.5 text-white" strokeWidth={3} />
+                    </span>
+                    <span className="text-sm md:text-base text-card-foreground">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Progress Bar */}
@@ -300,6 +297,7 @@ export function QuoteForm() {
               </Button>
             )}
           </div>
+        </div>
         </div>
       </div>
     </section>
