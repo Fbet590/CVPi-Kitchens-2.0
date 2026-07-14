@@ -166,12 +166,11 @@ export function QuoteForm() {
         <div className="bg-card rounded-[calc(1rem-2px)] shadow-xl p-6 md:p-8 font-[family-name:var(--font-poppins)]">
           {/* Form Header */}
           <div className="text-center mb-6">
-            <h2 className="text-xl md:text-2xl font-bold text-card-foreground mb-2">
+            <h2 className="font-bold text-card-foreground mb-2" style={{ fontSize: "30px" }}>
               See If You Qualify for Our $25K All-In Bathroom Transformation
             </h2>
             <p className="text-muted-foreground text-sm md:text-base">
-              Answer our quick form and we&apos;ll get in touch!<br /><br />
-              No Pressure. No Obligation. Less than 60 Seconds.
+              Answer our quick form and we&apos;ll get in touch!
             </p>
           </div>
           {/* Features */}
