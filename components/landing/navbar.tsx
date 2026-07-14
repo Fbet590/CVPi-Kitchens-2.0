@@ -22,9 +22,6 @@ export function Navbar() {
                 style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
               />
             </div>
-            <span className="font-serif font-semibold text-foreground text-sm md:text-base hidden sm:block">
-              CV Remodeling & Outdoor Living
-            </span>
           </div>
           
           <Button 

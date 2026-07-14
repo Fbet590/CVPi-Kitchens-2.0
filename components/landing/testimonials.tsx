@@ -26,7 +26,7 @@ export function Testimonials() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold mb-2">
+          <p className="font-semibold mb-2" style={{ color: '#05aefa' }}>
             Don&apos;t Just Take Our Word For It...
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
@@ -50,7 +50,9 @@ export function Testimonials() {
               </p>
               <div className="border-t border-border pt-4">
                 <p className="font-semibold text-card-foreground">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                <p className="text-sm font-semibold" style={{ color: testimonial.location === 'Scottsdale, AZ' ? '#0a99da' : testimonial.location === 'Phoenix, AZ' ? '#0a9bdc' : '#1194cf' }}>
+                  {testimonial.location}
+                </p>
               </div>
             </div>
           ))}

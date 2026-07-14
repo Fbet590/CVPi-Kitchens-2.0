@@ -24,7 +24,7 @@ export function Services() {
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold mb-2">
+          <p className="font-semibold mb-2" style={{ color: '#00aefd' }}>
             Ready to Reimagine Your Home&apos;s Interior?
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -33,7 +33,8 @@ export function Services() {
           <Button 
             size="lg" 
             onClick={scrollToForm}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold"
+            className="text-primary-foreground px-8 py-6 text-lg font-semibold"
+            style={{ backgroundColor: 'rgba(6, 173, 249, 0.9)' }}
           >
             Get a Free Quote
           </Button>
@@ -62,13 +63,13 @@ export function Services() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-primary font-semibold mb-2">
+          <p className="font-semibold mb-2" style={{ color: '#0fafff' }}>
             Ready to Reimagine Your Indoor Space?
           </p>
           <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
             Our Expert Contractor Services
           </h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="max-w-2xl mx-auto leading-relaxed" style={{ color: '#464b4e' }}>
             Our expert team is ready to handle projects of all sizes and complexities, always ensuring meticulous craftsmanship, clear communication, and results that exceed your expectations.
           </p>
         </div>

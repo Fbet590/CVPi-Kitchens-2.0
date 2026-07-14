@@ -104,7 +104,7 @@ export function Gallery() {
                 <p className="text-muted-foreground text-sm mb-2 leading-relaxed">
                   {image.description}
                 </p>
-                <div className="flex items-center gap-1 text-primary text-sm">
+                <div className="flex items-center gap-1 text-sm" style={{ color: image.city === 'Scottsdale, AZ' ? '#0a99da' : image.city === 'Phoenix, AZ' ? '#0a9bdc' : image.city === 'Tempe, AZ' ? '#1194cf' : '#0a99da' }}>
                   <MapPin className="w-4 h-4" />
                   <span>{image.city}</span>
                 </div>
