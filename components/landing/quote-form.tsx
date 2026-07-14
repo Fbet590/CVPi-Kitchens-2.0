@@ -167,7 +167,7 @@ export function QuoteForm() {
           {/* Form Header */}
           <div className="text-center mb-6">
             <h2 className="font-bold text-card-foreground mb-2" style={{ fontSize: "30px" }}>
-              See If You Qualify for Our $25K All-In Bathroom Transformation
+              See If You Qualify for Our $25K All-In Kitchen Transformation
             </h2>
             <p className="text-muted-foreground text-sm md:text-base">
               Answer our quick form and we&apos;ll get in touch!
