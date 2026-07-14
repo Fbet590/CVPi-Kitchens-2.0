@@ -279,7 +279,8 @@ export function QuoteForm() {
               <Button
                 onClick={goNext}
                 disabled={!canProceed()}
-                className="flex-1 bg-primary hover:bg-primary/90"
+                className="flex-1"
+                style={{ backgroundColor: "rgba(7, 167, 240, 0.9)", fontWeight: "600" }}
               >
                 Next
                 <ChevronRight className="w-4 h-4 ml-2" />
