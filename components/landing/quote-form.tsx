@@ -170,8 +170,7 @@ export function QuoteForm() {
               See If You Qualify for Our $25K All-In Bathroom Transformation
             </h2>
             <p className="text-muted-foreground text-sm md:text-base">
-              Answer our quick form and we&apos;ll get in touch!<br /><br />
-              No Pressure. No Obligation. Less than 60 Seconds.
+              Answer our quick form and we&apos;ll get in touch!
             </p>
           </div>
           {/* Features */}
