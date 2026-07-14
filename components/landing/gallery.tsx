@@ -104,9 +104,23 @@ export function Gallery() {
                 <p className="text-muted-foreground text-sm mb-2 leading-relaxed">
                   {image.description}
                 </p>
-                <div className="flex items-center gap-1 text-primary text-sm">
-                  <MapPin className="w-4 h-4" />
-                  <span>{image.city}</span>
+                <div className="flex items-center gap-1 text-sm" style={{ 
+                  color: image.city === 'Scottsdale, AZ' ? '#00afff' : 
+                         image.city === 'Phoenix, AZ' ? '#00adfb' : 
+                         image.city === 'Tempe, AZ' ? '#01aaf7' :
+                         image.city === 'Mesa, AZ' ? '#00afff' :
+                         image.city === 'Gilbert, AZ' ? '#00afff' :
+                         image.city === 'Chandler, AZ' ? '#02b0ff' : '#00afff'
+                }}>
+                  <MapPin className="w-4 h-4" style={{ 
+                    color: image.city === 'Scottsdale, AZ' ? '#00aefd' : 
+                           image.city === 'Phoenix, AZ' ? '#03affd' : 
+                           image.city === 'Tempe, AZ' ? '#03acf9' :
+                           image.city === 'Mesa, AZ' ? '#0aa9f2' :
+                           image.city === 'Gilbert, AZ' ? '#08a9f2' :
+                           image.city === 'Chandler, AZ' ? '#08acf6' : '#00aefd'
+                  }} />
+                  <span style={{ fontWeight: '700' }}>{image.city}</span>
                 </div>
               </div>
             </div>

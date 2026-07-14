@@ -13,9 +13,6 @@ export function Footer() {
               className="object-contain"
             />
           </div>
-          <p className="font-serif text-xl font-semibold">
-            CV Remodeling & Outdoor Living
-          </p>
           <p className="text-background/70 text-sm">
             &copy; {new Date().getFullYear()} All rights reserved. Licensed & Insured.
           </p>
