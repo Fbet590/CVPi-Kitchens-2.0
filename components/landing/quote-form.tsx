@@ -167,10 +167,11 @@ export function QuoteForm() {
           {/* Form Header */}
           <div className="text-center mb-6">
             <h2 className="text-xl md:text-2xl font-bold text-card-foreground mb-2">
-              See If You Qualify for Our $15K All-In Kitchen Transformation
+              See If You Qualify for Our $25K All-In Bathroom Transformation
             </h2>
             <p className="text-muted-foreground text-sm md:text-base">
-              Answer our quick form and we&apos;ll get in touch. No Pressure. No Obligation. Less than 60 Seconds.
+              Answer our quick form and we&apos;ll get in touch!<br /><br />
+              No Pressure. No Obligation. Less than 60 Seconds.
             </p>
           </div>
           {/* Features */}
@@ -199,8 +200,8 @@ export function QuoteForm() {
           <div className="mb-8">
             <div className="h-2 bg-muted rounded-full overflow-hidden">
               <div 
-                className="h-full bg-primary transition-all duration-300 ease-out"
-                style={{ width: `${progress}%` }}
+                className="h-full transition-all duration-300 ease-out"
+                style={{ width: `${progress}%`, backgroundColor: "#07adf9" }}
               />
             </div>
             <p className="text-sm text-muted-foreground mt-2 text-center">
